@@ -1,0 +1,31 @@
+POST http://localhost:3333/revista 
+Content-Type: application/json 
+
+{ 
+    "titulo": "Revista 01", 
+    "editora": "Editora 01", 
+    "categoria": "infantil" 
+}
+
+### 
+
+GET http://localhost:3333/revista
+
+### 
+
+GET http://localhost:3333/revista?search=Veja 
+
+### 
+
+PUT http://localhost:3333/revistas/ba205f2f-134c-47d0-ba12-54e67fc88e13
+Content-Type: application/json 
+
+{ 
+    "titulo": "Veja", 
+    "editora": "Editora Abril",
+    "categoria": "Semanais de informação" 
+} 
+
+###
+
+DELETE http://localhost:3333/revistas/ea13fdd2-cf35-4442-a31e-d1c6e48639f0
